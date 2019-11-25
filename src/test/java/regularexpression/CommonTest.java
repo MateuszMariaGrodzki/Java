@@ -26,4 +26,14 @@ public class CommonTest {
                 () -> assertFalse(common.isEmailCorrect("agni.asdz@gmail"))
         );
     }
+
+    @Test
+    @DisplayName("Testing post code method")
+    public void testPostCode(){
+        assertAll(
+                () -> assertTrue(common.isPostCodeCorrect("20-531")),
+                () -> assertFalse(common.isPostCodeCorrect("223-51")),
+                () -> assertFalse(common.isPostCodeCorrect("aa-aaa"))
+        );
+    }
 }
