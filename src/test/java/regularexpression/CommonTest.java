@@ -36,4 +36,20 @@ public class CommonTest {
                 () -> assertFalse(common.isPostCodeCorrect("aa-aaa"))
         );
     }
+
+    @Test
+    @DisplayName("Testing password method")
+    public void testPassword(){
+        assertAll(
+                () -> assertTrue(common.isPasswordCorrect("AlaMaKota123@")),
+                () -> assertTrue(common.isPasswordCorrect("940kds32AA34*&")),
+                () -> assertTrue(common.isPasswordCorrect("asd231AA321^-")),
+                () -> assertFalse(common.isPasswordCorrect("aA1%")),
+                () -> assertFalse(common.isPasswordCorrect("aA1%aaaaaaaaaaaaaaaaaaaaa")),
+                () -> assertFalse(common.isPasswordCorrect("AlaMaKota123")),
+                () -> assertFalse(common.isPasswordCorrect("alamakota123@")),
+                () -> assertFalse(common.isPasswordCorrect("ALAMAKOTA123@")),
+                () -> assertFalse(common.isPasswordCorrect("AlaMaKota@@@@"))
+        );
+    }
 }

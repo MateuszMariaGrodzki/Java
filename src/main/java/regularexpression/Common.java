@@ -16,7 +16,7 @@ public class Common {
 
     public boolean isPasswordCorrect(String password){
         Pattern pattern = Pattern.compile("(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])" +
-                "(?=.[\\!\\@\\#\\$\\%\\^\\&\\*])(?!=.*\\s).{8,15}");
+                "(?=.*[\\!\\@\\#\\$\\%\\^\\&\\*])(?!=.*\\s).{8,15}");
         return pattern.matcher(password).matches();
     }
 
