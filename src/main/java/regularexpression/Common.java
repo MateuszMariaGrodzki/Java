@@ -8,4 +8,11 @@ public class Common {
         Pattern pattern = Pattern.compile("[a-zA-Z0-9] + [\\.a-zA-Z0-9]*@[a-zA-Z0-9]+\\.[a-z]{2,}[a-z]*");
         return pattern.matcher(email).matches();
     }
+
+    public boolean isPostCodeCorrect(String code){
+        Pattern pattern = Pattern.compile("\\d{2}-\\d{3}");
+        return pattern.matcher(code).matches();
+    }
+
+    
 }
