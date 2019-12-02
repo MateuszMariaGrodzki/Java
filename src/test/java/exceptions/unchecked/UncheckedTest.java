@@ -29,4 +29,5 @@ public class UncheckedTest {
         assertThrows(IndexOutOfBoundsException.class , () -> unchecked.getElementFromTable(5,-3));
         assertThrows(NegativeArraySizeException.class , () -> unchecked.getElementFromTable(-5,4));
     }
+
 }
