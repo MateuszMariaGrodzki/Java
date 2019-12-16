@@ -1,7 +1,7 @@
 package generictype;
 
 public class Archer implements Hero {
-    String name;
+    private String name;
 
     public Archer(String name){
         this.name = name;
@@ -15,5 +15,10 @@ public class Archer implements Hero {
     @Override
     public void defend() {
         System.out.println("Archer " + name + " defend");
+    }
+
+    @Override
+    public String toString() {
+        return "I'm archer";
     }
 }
