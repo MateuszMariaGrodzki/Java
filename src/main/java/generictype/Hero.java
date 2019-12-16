@@ -1,6 +1,6 @@
 package generictype;
 
 public interface Hero {
-    void atack();
+    void attack();
     void defend();
 }

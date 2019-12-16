@@ -8,12 +8,12 @@ public class Knight implements Hero {
     }
 
     @Override
-    public void atack() {
-        System.out.println("Knight" + name + "attack");
+    public void attack() {
+        System.out.println("Knight " + name + " attack");
     }
 
     @Override
     public void defend() {
-        System.out.println("Knight" + name + "defend");
+        System.out.println("Knight " + name + " defend");
     }
 }

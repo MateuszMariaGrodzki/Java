@@ -8,12 +8,12 @@ public class Archer implements Hero {
     }
 
     @Override
-    public void atack() {
-        System.out.println("Archer" + name + "attack");
+    public void attack() {
+        System.out.println("Archer " + name + " attack");
     }
 
     @Override
     public void defend() {
-        System.out.println("Archer" + name + "defend");
+        System.out.println("Archer " + name + " defend");
     }
 }
