@@ -10,4 +10,8 @@ public class Mission<T extends Hero> {
     public void introduce(){
         System.out.println(hero.toString());
     }
+
+    public T getHero(){
+        return hero;
+    }
 }
