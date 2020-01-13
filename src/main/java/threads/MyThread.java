@@ -2,20 +2,24 @@ package threads;
 
 public class MyThread implements Runnable {
     private String threadName;
-    private Increment increment;
+    private IncrementInterface incrementInterface;
 
-    public MyThread(String threadName){
+    public MyThread(String threadName, IncrementInterface incrementInterface){
         this.threadName = threadName;
-        this.increment = new Increment();
+        this.incrementInterface = incrementInterface;
     }
 
     public int getValueFromIncrement(){
-        return increment.getI();
+        return incrementInterface.getI();
+    }
+
+    public IncrementInterface getIncrementInterface(){
+        return incrementInterface;
     }
 
     @Override
     public void run() {
         for(int i = 0 ; i < 10000 ; ++i)
-        increment.increment();
+        incrementInterface.increment();
     }
 }

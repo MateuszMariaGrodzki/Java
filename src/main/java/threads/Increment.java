@@ -13,6 +13,6 @@ public class Increment implements IncrementInterface {
 
     @Override
     public void introduce() {
-        System.out.println("Wątek niezsynchronizowany");
+        System.out.println("Wątek niezsynchronizowany:");
     }
 }
