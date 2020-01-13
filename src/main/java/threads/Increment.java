@@ -1,6 +1,6 @@
 package threads;
 
-public class Increment {
+public class Increment implements IncrementInterface {
     private int i;
 
     public void increment(){
@@ -9,5 +9,10 @@ public class Increment {
 
     public int getI(){
         return i;
+    }
+
+    @Override
+    public void introduce() {
+        System.out.println("Wątek niezsynchronizowany");
     }
 }

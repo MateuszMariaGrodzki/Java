@@ -1,12 +1,12 @@
 package threads;
 
 public class MyThread implements Runnable {
-    String threadName;
-    Increment increment;
+    private String threadName;
+    private Increment increment;
 
     public MyThread(String threadName){
         this.threadName = threadName;
-        increment = new Increment();
+        this.increment = new Increment();
     }
 
     public int getValueFromIncrement(){
