@@ -2,15 +2,6 @@ package threads;
 
 public class Main {
 
-    public static void main(String[] args)  {
-        try {
-            new Main().withoutSynchronized();
-            new Main().withSynchronized();
-        } catch ( InterruptedException e){
-            e.printStackTrace();
-        }
-    }
-
     public void withoutSynchronized() throws InterruptedException{
         MyThread r = new MyThread("Wątek", new Increment());
         startThreadsMethod(r);
@@ -35,6 +26,6 @@ public class Main {
         thread2.join();
         thread3.join();
 
-        System.out.println(myThread.getValueFromIncrement());
+        System.out.print(myThread.getValueFromIncrement());
     }
 }

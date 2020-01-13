@@ -26,9 +26,4 @@ public class CheckedTest {
         assertEquals("Hello" , outContent.toString().trim());
     }
 
-    @Test
-    @DisplayName("Wrong file name test")
-    void wrongNameTest(){
-        assertThrows(IOException.class , () -> checked.printFileContent("bbb.txt"));
-    }
 }

@@ -13,6 +13,6 @@ public class SynchronizedIncrement implements IncrementInterface {
 
     @Override
     public void introduce() {
-        System.out.println("Wątek zsynchronizowany:");
+        System.out.print("Wątek zsynchronizowany:");
     }
 }
