@@ -7,5 +7,6 @@
 > * generic types
 > * inner classes
 > * regular expression
+> * threads
 
 ## Tests are in the src/test directory
