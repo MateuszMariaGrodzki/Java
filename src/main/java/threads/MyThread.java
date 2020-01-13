@@ -7,9 +7,9 @@ public class MyThread implements Runnable {
         this.threadName = threadName;
     }
 
-
     @Override
     public void run() {
         System.out.println("Wątek " + threadName + " rozpoczyna dzialanie");
+
     }
 }

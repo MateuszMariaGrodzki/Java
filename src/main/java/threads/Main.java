@@ -3,6 +3,7 @@ package threads;
 public class Main {
 
     public static void main(String[] args) {
-        Runnable myThread = new MyThread("aaa");
+        Thread thread = new Thread(new MyThread("aaa"));
+        thread.start();
     }
 }
