@@ -8,4 +8,8 @@ public class HiddenClass {
         System.out.println("Prywatny kosntruktor");
         text = "Zmiana prywatnego pola przez konstruktor";
     }
+
+    private String getText(){
+        return text;
+    }
 }
